@@ -118,10 +118,31 @@ img {
 /* Оформление контактов в шапке */
 .contacts-link {
     display: flex;
+    align-items: center;
 }
 
 .auth-contacts {
     margin-left: auto;
+}
+
+.contacts-link .item::before {
+    display: inline-block;
+    content: " ";
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    
+}
+
+.icon-mail::before {
+    background-image: url("../img/contact-icon/e-mail.svg");
+    height: 11px;
+    width: 16px;
+}
+
+.icon-tel::before {
+    background-image: url("../img/contact-icon/tel.svg");
+    height: 15px;
+    width: 10px;
 }
 
 .contacts-link .item + .item {
@@ -149,7 +170,25 @@ img {
     padding-bottom: 200px;
 
     text-align: center;
-    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+      to right,
+      /* 47, 48, 58, 0.8 */
+      rgba(47, 0, 0, 0.8),
+      rgba(0, 48, 0, 0.8)
+    ),
+        url("../img/bg-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
 }
 
 .hero-title {
