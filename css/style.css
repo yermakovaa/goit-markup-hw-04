@@ -178,7 +178,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     background-image: 
-        linear-gradient(90deg, rgba(47,48,58,0.8) 0%, rgba(47,48,58,0.8) 100%),
+        linear-gradient(rgba(47,48,58,0.8), rgba(47,48,58,0.8)),
         url("../img/bg-hero.jpg");   
     background-repeat: no-repeat;
     background-position: center;
@@ -388,6 +388,16 @@ img {
     margin-left: 30px;
 }
 
+.clients .item {
+    display: flex;
+    height: 90px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Оформление футера */
 .page-footer {
     padding-top: 48px;
@@ -454,6 +464,33 @@ img {
 .socials .item-link:not(:first-child) {
     margin-left: 10px;
 }
+.social-links-footer {
+    display: block;
+    content: "";
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.socials .icon-instagram {
+    background-image: url("../img/icon-socials/instagram.svg");
+}
+
+.socials .icon-twitter {
+    background-image: url("../img/icon-socials/twitter.svg");
+}
+
+.socials .icon-facebook {
+    background-image: url("../img/icon-socials/facebook.svg");
+}
+
+.socials .icon-linkedin {
+    background-image: url("../img/icon-socials/linkedin.svg");
+}
+
+
 
 .copyright {
     margin-top: 18px;
