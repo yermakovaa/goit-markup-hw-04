@@ -474,6 +474,7 @@ img {
     background-repeat: no-repeat;
     background-position: center; 
 }
+
 .socials .icon-instagram {
     background-image: url("../img/icon-socials/instagram.svg");
 }
@@ -490,7 +491,10 @@ img {
     background-image: url("../img/icon-socials/linkedin.svg");
 }
 
-
+.social-links-footer:hover,
+.social-links-footer:focus {
+    background-color: var(--accent-color);
+}
 
 .copyright {
     margin-top: 18px;
@@ -574,6 +578,12 @@ img {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 20px 24px;
+}
+
+.projects .item:hover,
+.projects .item:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
 }
 
 .name-project {
