@@ -125,24 +125,18 @@ img {
     margin-left: auto;
 }
 
-.contacts-link .item::before {
-    display: inline-block;
-    content: "";
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    
-}
-
-.icon-mail::before {
-    background-image: url("../img/contact-icon/e-mail.svg");
-    height: 11px;
+.icon-mail {
     width: 16px;
+    height: 11px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
-.icon-tel::before {
-    background-image: url("../img/contact-icon/tel.svg");
-    height: 15px;
+.icon-tel {
     width: 10px;
+    height: 15px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .contacts-link .item + .item {
@@ -151,17 +145,21 @@ img {
 
 .contacts-link-item {
     color: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .contacts-link-item:hover,
 .contacts-link-item:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* Оформление героя */
@@ -177,6 +175,7 @@ img {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgba(47, 48, 58, 0.8);
     background-image: 
         linear-gradient(rgba(47,48,58,0.8), rgba(47,48,58,0.8)),
         url("../img/bg-hero.jpg");   
@@ -236,31 +235,13 @@ img {
     display: flex;
 }
 
-.feature-list .item::before {
+.icon-feature {
     display: block;
-    content: "";
     height: 120px;
     width: 270px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: var(--bg-color);
     border-radius: 4px;
-}
-
-.icon-antenna::before {
-    background-image: url("../img/feature-icon/antenna.svg");
-}
-
-.icon-clock::before {
-    background-image: url("../img/feature-icon/clock.svg");
-}
-
-.icon-diagram::before {
-    background-image: url("../img/feature-icon/diagram.svg");
-}
-
-.icon-astronaut::before {
-    background-image: url("../img/feature-icon/astronaut.svg");
+    padding: 25px 100px;
 }
 
 .feature-list .item:not(:first-child) {
@@ -376,6 +357,17 @@ img {
 .social-links:hover,
 .social-links:focus {
     color: var(--accent-color);
+}
+
+.icon-network {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    /* padding: 12px; */
+    border: 2px solid #000;
+    
 }
 
 /* Постоянные клиенты */
